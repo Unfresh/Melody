@@ -1,3 +1,23 @@
+/* @font-face {
+    font-family: 'Bebas Neue Cyrillic';
+    src: local('Bebas Neue Cyrillic'), local('BebasNeueCyrillic'),
+        url('../fonts/BebasNeueCyrillic.woff2') format('woff2'),
+        url('../fonts/BebasNeueCyrillic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Regular Regular'), local('BebasNeueRegular'),
+        url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -61,6 +81,85 @@ body {
     font-size: 17px;
 }
 
-/* navbar-menu
-navbar-item
-navbar-contacts */
+.main {
+    max-width: 1280px;
+    margin: auto;
+    padding-top: 54px;
+    display: flex;
+    
+}
+
+.home-image path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.home-image path:hover {
+    opacity: 0.75;
+}
+
+.main-info {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 30px;
+}
+
+
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.counter-button {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+
+.counter {
+    font-size: 124px;
+    color: #635854;
+}
+
+.counter-up {
+
+}
+
+.counter-down {
+    transform: rotateX(180deg)
+}
+
+.button-primary {
+    line-height: 19px;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    background: #3596F5;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    
+    
+}
+
+.main-title {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #635854;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 37px;
+    line-height: 44px;
+    text-transform: uppercase;
+    letter-spacing: 4.1px;
+    margin: 0;
+}
